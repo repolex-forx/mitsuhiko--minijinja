@@ -1,0 +1,92 @@
+[2026-11-22T15:25:31Z] === ENRICH ITERATION 1 START | repo=mitsuhiko/minijinja sha=0ca749f7 ===
+[2026-11-22T15:25:31Z] [iter=1] PHASE START: enrich repo=mitsuhiko/minijinja sha=0ca749f7 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/0ca749f7-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/0ca749f7ba507514fa6b052c74130ae6ae472e03.nq.gz
+[2026-11-22T15:25:31Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-11-22T15:25:53Z] [iter=1] AST store loaded triples=2617808 load_secs=21 mem_mb=906 MB
+[2026-11-22T15:25:53Z] [iter=1] Step 2: Finding LSP targets mem_mb=906 MB
+[2026-11-22T15:25:58Z] [iter=1] LSP targets found call_sites=21713 imports=513 extends=8 implements=160 secs=5
+[2026-11-22T15:26:01Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=906 MB
+[2026-11-22T15:26:18Z] [iter=1] Position index built positions=177632 nodes_with_types=214097 secs=17 mem_mb=906 MB
+[2026-11-22T15:26:18Z] [iter=1] Step 3: Starting LSP resolution mem_mb=906 MB already_completed_types=[] already_completed_files=0
+[2026-11-22T15:26:18Z] [iter=1] Resolving target type target_type=call_site count=21713
+[2026-11-22T15:27:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.6 files_done=0 resolved=0 errors=21713 current=benchmarks/benches/templates.rs
+[2026-11-22T15:28:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.6 files_done=1 resolved=40 errors=21713 current=minijinja/tests/test_value.rs
+[2026-11-22T15:31:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.6 files_done=2 resolved=468 errors=21713 current=minijinja/src/filters.rs
+[2026-11-22T15:35:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.5 files_done=3 resolved=1062 errors=21713 current=minijinja/src/defaults.rs
+[2026-11-22T15:36:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=11.1 files_done=4 resolved=1389 errors=21713 current=minijinja-contrib/tests/globals.rs
+[2026-11-22T15:44:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=18.5 files_done=6 resolved=1928 errors=21713 current=minijinja/src/vm/context.rs
+[2026-11-22T15:51:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=26.0 files_done=8 resolved=2582 errors=21713 current=minijinja/src/value/mod.rs
+[2026-11-22T15:55:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=29.5 files_done=9 resolved=3121 errors=21713 current=minijinja/tests/test_environment.rs
+[2026-11-22T15:55:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=30.4 files_done=10 resolved=3251 errors=21713 current=minijinja-cabi/src/error.rs
+[2026-11-22T15:57:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=32.2 files_done=12 resolved=3665 errors=21713 current=examples/load-resource/src/main.rs
+[2026-11-22T16:01:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=35.9 files_done=14 resolved=4115 errors=21713 current=minijinja/tests/test_tests.rs
+[2026-11-22T16:01:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=36.5 files_done=16 resolved=4221 errors=21713 current=minijinja/src/vm/fuel.rs
+[2026-11-22T16:02:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=37.0 files_done=18 resolved=4328 errors=21713 current=minijinja/src/format_utils.rs
+[2026-11-22T16:06:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=40.6 files_done=19 resolved=4813 errors=21713 current=minijinja/src/value/serialize.rs
+[2026-11-22T16:07:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=41.7 files_done=20 resolved=4980 errors=21713 current=minijinja-contrib/tests/filters.rs
+[2026-11-22T16:07:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=42.4 files_done=21 resolved=5092 errors=21713 current=minijinja-contrib/src/pycompat.rs
+[2026-11-22T16:09:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=43.9 files_done=22 resolved=5296 errors=21713 current=minijinja-contrib/tests/datetime.rs
+[2026-11-22T16:10:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=44.6 files_done=23 resolved=5391 errors=21713 current=minijinja-cli/src/command.rs
+[2026-11-22T16:11:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=46.2 files_done=25 resolved=5661 errors=21713 current=minijinja/src/compiler/meta.rs
+[2026-11-22T16:13:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=47.8 files_done=26 resolved=5830 errors=21713 current=minijinja/src/value/merge_object.rs
+[2026-11-22T16:14:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=48.6 files_done=28 resolved=6137 errors=21713 current=examples/undefined-tracking/src/main.rs
+[2026-11-22T16:19:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=54.2 files_done=30 resolved=6622 errors=21713 current=minijinja/tests/test_fuel.rs
+[2026-11-22T16:20:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=55.3 files_done=33 resolved=6739 errors=21713 current=minijinja/src/error.rs
+[2026-11-22T16:21:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=55.8 files_done=35 resolved=6825 errors=21713 current=minijinja-cli/src/cli.rs
+[2026-11-22T16:22:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=56.9 files_done=36 resolved=7008 errors=21713 current=minijinja/tests/test_macros.rs
+[2026-11-22T16:23:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=57.6 files_done=37 resolved=7111 errors=21713 current=examples/function-using-async/src/main.rs
+[2026-11-22T16:23:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=58.2 files_done=39 resolved=7204 errors=21713 current=minijinja/src/value/ops.rs
+[2026-11-22T16:26:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=60.9 files_done=40 resolved=7627 errors=21713 current=minijinja-js/src/lib.rs
+[2026-11-22T16:27:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=61.9 files_done=42 resolved=7747 errors=21713 current=examples/state-temps/src/main.rs
+[2026-11-22T16:30:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=65.0 files_done=44 resolved=8127 errors=21713 current=examples/inheritance/src/main.rs
+[2026-11-22T16:31:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=66.4 files_done=46 resolved=8247 errors=21713 current=minijinja-cli/tests/test_basic.rs
+[2026-11-22T16:32:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=67.4 files_done=47 resolved=8366 errors=21713 current=examples/syntax-highlighting/src/main.rs
+[2026-11-22T16:33:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=68.1 files_done=50 resolved=8456 errors=21713 current=minijinja/tests/test_templates.rs
+[2026-11-22T16:36:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=70.8 files_done=51 resolved=8796 errors=21713 current=minijinja/tests/test_filters.rs
+[2026-11-22T16:39:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=74.1 files_done=52 resolved=9156 errors=21713 current=minijinja-cabi/src/env.rs
+[2026-11-22T16:40:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=74.7 files_done=53 resolved=9204 errors=21713 current=minijinja-contrib/tests/pycompat.rs
+[2026-11-22T16:40:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=75.3 files_done=55 resolved=9317 errors=21713 current=minijinja-py/src/typeconv.rs
+[2026-11-22T16:41:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=76.2 files_done=56 resolved=9482 errors=21713 current=minijinja-cli/src/config.rs
+[2026-11-22T16:42:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=77.0 files_done=58 resolved=9741 errors=21713 current=minijinja/src/debug.rs
+[2026-11-22T16:43:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=77.6 files_done=60 resolved=9846 errors=21713 current=examples/load-lazy/src/main.rs
+[2026-11-22T16:44:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=78.7 files_done=62 resolved=9997 errors=21713 current=minijinja-py/src/state.rs
+[2026-11-22T16:44:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=79.4 files_done=64 resolved=10093 errors=21713 current=minijinja-contrib/tests/str_format.rs
+[2026-11-22T16:49:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=83.9 files_done=66 resolved=10544 errors=21713 current=minijinja-contrib/src/filters/mod.rs
+[2026-11-22T16:49:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=84.5 files_done=67 resolved=10666 errors=21713 current=minijinja/src/utils.rs
+[2026-11-22T16:50:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=85.2 files_done=68 resolved=10881 errors=21713 current=minijinja-cabi/src/value.rs
+[2026-11-22T16:51:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=85.9 files_done=69 resolved=10927 errors=21713 current=minijinja/src/value/deserialize.rs
+[2026-11-22T16:52:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=86.8 files_done=70 resolved=11066 errors=21713 current=examples/invalid-value/src/main.rs
+[2026-11-22T16:52:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=87.4 files_done=73 resolved=11132 errors=21713 current=minijinja-contrib/src/filters/datetime.rs
+[2026-11-22T16:53:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=88.0 files_done=75 resolved=11241 errors=21713 current=minijinja/src/template.rs
+[2026-11-22T16:54:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=88.9 files_done=76 resolved=11329 errors=21713 current=examples/actix-web-demo/src/main.rs
+[2026-11-22T16:55:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=89.5 files_done=80 resolved=11455 errors=21713 current=examples/path-loader/src/main.rs
+[2026-11-22T16:55:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=90.4 files_done=82 resolved=11537 errors=21713 current=minijinja/tests/test_undefined.rs
+[2026-11-22T16:56:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=91.0 files_done=85 resolved=11733 errors=21713 current=examples/render-value/src/main.rs
+[2026-11-22T16:57:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=91.5 files_done=88 resolved=11845 errors=21713 current=minijinja/tests/test_lexer.rs
+[2026-11-22T16:57:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=92.1 files_done=91 resolved=11968 errors=21713 current=examples/deserialize/src/main.rs
+[2026-11-22T16:58:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=92.6 files_done=94 resolved=12083 errors=21713 current=minijinja/src/macros.rs
+[2026-11-22T16:58:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=93.1 files_done=101 resolved=12170 errors=21713 current=examples/object-ref/src/main.rs
+[2026-11-22T16:59:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=93.8 files_done=103 resolved=12249 errors=21713 current=minijinja/src/vm/closure_object.rs
+[2026-11-22T16:59:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=94.4 files_done=109 resolved=12378 errors=21713 current=examples/call-block-function/src/main.rs
+[2026-11-22T17:00:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=95.0 files_done=114 resolved=12457 errors=21713 current=minijinja/src/syntax.rs
+[2026-11-22T17:01:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=95.5 files_done=121 resolved=12555 errors=21713 current=minijinja-embed/src/lib.rs
+[2026-11-22T17:01:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=96.0 files_done=128 resolved=12635 errors=21713 current=minijinja-contrib/src/lib.rs
+[2026-11-22T17:02:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=96.5 files_done=137 resolved=12672 errors=21713 current=minijinja-js/tests/test_all.mjs
+[2026-11-22T17:02:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=97.3 files_done=138 resolved=12715 errors=21713 current=minijinja-cabi/example/hello.c
+[2026-11-22T17:03:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=97.8 files_done=139 resolved=12764 errors=21713 current=minijinja-cabi/tests/testsupport.h
+[2026-11-22T17:04:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=98.7 files_done=141 resolved=12832 errors=21713 current=minijinja-cabi/tests/test_loader_fuel.c
+[2026-11-22T17:05:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=99.6 files_done=143 resolved=12894 errors=21713 current=minijinja-cabi/tests/test_env_config.c
+[2026-11-22T17:05:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=100.4 files_done=144 resolved=12936 errors=21713 current=minijinja-cabi/tests/test_callbacks.c
+[2026-11-22T17:06:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=101.1 files_done=146 resolved=12988 errors=21713 current=minijinja-py/python/minijinja/__init__.py
+[2026-11-22T17:07:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=101.7 files_done=148 resolved=13064 errors=21713 current=minijinja-cli/generate-syntax-docs.py
+[2026-11-22T17:07:24Z] [iter=1] Target type resolved target_type=call_site resolved=13085 errors=21713 secs=6067 mem_mb=906 MB
+[2026-11-22T17:07:24Z] [iter=1] Resolving target type target_type=import_statement count=513
+[2026-11-22T17:07:44Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=102.2 files_done=10 resolved=34 errors=0 current=minijinja-contrib/tests/filters.rs
+[2026-11-22T17:08:08Z] [iter=1] Target type resolved target_type=import_statement resolved=497 errors=0 secs=43 mem_mb=906 MB
+[2026-11-22T17:08:08Z] [iter=1] Resolving target type target_type=extends_clause count=8
+[2026-11-22T17:08:09Z] [iter=1] Target type resolved target_type=extends_clause resolved=7 errors=0 secs=1 mem_mb=906 MB
+[2026-11-22T17:08:09Z] [iter=1] Resolving target type target_type=implements_clause count=160
+[2026-11-22T17:08:25Z] [iter=1] HEARTBEAT target_type=implements_clause elapsed_min=102.9 files_done=1 resolved=49 errors=0 current=minijinja/src/environment.rs
+[2026-11-22T17:08:30Z] [iter=1] Target type resolved target_type=implements_clause resolved=160 errors=0 secs=21 mem_mb=906 MB
+[2026-11-22T18:24:11Z] [iter=1] Step 5: Writing final enrichment file triples=156124
+[2026-11-22T18:24:13Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/0ca749f7ba507514fa6b052c74130ae6ae472e03.nq.gz size_kb=3594
+[2026-11-22T18:24:13Z] [iter=1] PHASE END: enrich elapsed_s=10721 elapsed_min=178.7 total_triples=156124
