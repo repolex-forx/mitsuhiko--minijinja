@@ -23,13 +23,13 @@
       "@type": "repolex:GraphFile",
       "repolex:graphType": "branch",
       "repolex:graphFilePath": "branch/branch.nq.gz",
-      "repolex:graphFileSize": 2374
+      "repolex:graphFileSize": 2383
     },
     {
       "@type": "repolex:GraphFile",
       "repolex:graphType": "tag",
       "repolex:graphFilePath": "tag/tag.nq.gz",
-      "repolex:graphFileSize": 5982
+      "repolex:graphFileSize": 6022
     },
     {
       "@type": "repolex:GraphFile",
@@ -45,7 +45,7 @@
     }
   ],
   "repolex:parseStatus": "metadata_complete",
-  "repolex:parsedAt": "2026-11-22T15:10:35.447559+00:00",
+  "repolex:parsedAt": "2026-11-22T15:17:32.072755+00:00",
   "repolex:parserVersion": "0.1.10",
   "git:tagName": "minijinja-go/v2.24.0"
 }
