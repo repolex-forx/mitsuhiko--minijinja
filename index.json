@@ -1,0 +1,11 @@
+{
+  "org": "mitsuhiko",
+  "repo": "minijinja",
+  "versions": [
+    {
+      "commit": "0ca749f7ba507514fa6b052c74130ae6ae472e03",
+      "tag": "minijinja-go/v2.24.0",
+      "parsed_at": "2026-11-22T18:28:18.015053+00:00"
+    }
+  ]
+}
